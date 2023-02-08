@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/kullaniciAdıText"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:hint="Kulanıcı Adını Giriniz"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/kullaniciSifreText"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="Kulanıcı Sifresi Giriniz"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciAdıText">
+
+
+    </EditText>
+
+    <Button
+        android:id="@+id/girisYap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:onClick="girisYapAksiyon"
+        android:text="GİRİŞ"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kayitOl">
+
+    </Button>
+
+    <Button
+        android:id="@+id/kayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:onClick="kayitOlAksiyon"
+        android:text="KAYIT"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciSifreText">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
